@@ -6,8 +6,14 @@ namespace Helloworld
     {
         static void Main(string[] args)
         {
+            string saisie = "";
             Message message = new Message();
-            Console.WriteLine(message.GetHelloMessage());
+
+            while (saisie != "exit")
+            {
+                Console.WriteLine(message.GetHelloMessage());
+                saisie = Console.ReadLine();
+            }
         }
     }
 }
