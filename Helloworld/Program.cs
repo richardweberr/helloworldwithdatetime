@@ -6,13 +6,13 @@ namespace Helloworld
     {
         static void Main(string[] args)
         {
-            string saisie = "";
+            string input = "";
             Message message = new Message();
 
-            while (saisie != "exit")
+            while (input != "exit")
             {
                 Console.WriteLine(message.GetHelloMessage());
-                saisie = Console.ReadLine();
+                input = Console.ReadLine();
             }
         }
     }
